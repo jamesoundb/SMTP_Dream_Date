@@ -5,3 +5,12 @@ FROM_EMAIL="name of the user email you are sending from."
 TO_EMAIL="name of the user email you are sending to."
 
 PASSWORD="your FROM_EMAIL user's password for the email account."
+
+Run everything at your desired time each day as a cronjob. Example:
+
+0 15 * * * cd /Users/jameswurbel/SMTP_Dream_Date && python3 del_tfstate.py
+
+0 16 * * * cd /Users/jameswurbel/SMTP_Dream_Date && bash animal_create.sh
+
+1 16 * * * cd /Users/jameswurbel/SMTP_Dream_Date && python3 dream_date.py
+
