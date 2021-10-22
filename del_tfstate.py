@@ -3,8 +3,8 @@
 import os
 import glob
 
-tf_files = glob.glob('/Users/jameswurbel/SMTP_Dream_Date/*.tfstate')
-dd_files = glob.glob('/Users/jameswurbel/SMTP_Dream_Date/tfanimal.txt')
+tf_files = glob.glob('*.tfstate')
+dd_files = glob.glob('tfanimal.txt')
 
 for f in tf_files:
     try:
