@@ -2,4 +2,12 @@
 *.tfstate
 *tfanimal.txt
 .terraform/*
-
+*.tfvars
+**/.terraform/*
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
