@@ -6,6 +6,8 @@ TO_EMAIL="name of the user email you are sending to."
 
 PASSWORD="your FROM_EMAIL user's password for the email account."
 
+Set these as environment variables in a .zshenv file or your preferred method of persisting environment variables.
+
 Run everything at your desired time each day as a cronjob. Example:
 
 0 15 * * * cd /Users/jameswurbel/SMTP_Dream_Date && python3 del_tfstate.py
