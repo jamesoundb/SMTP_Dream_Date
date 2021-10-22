@@ -18,10 +18,10 @@ message['To'] = TO_EMAIL
 message['Subject'] = 'Dream Date Animal!'
 
 #The body and the attachments for the mail
-with open("/Users/jameswurbel/SMTP_Dream_Date/tfanimal.txt") as dd_txt:
+with open("tfanimal.txt") as dd_txt:
     text = dd_txt.read()
     message.attach(MIMEText(text, 'plain'))
-    attach_file_name = '/Users/jameswurbel/SMTP_Dream_Date/tfanimal.txt'
+    attach_file_name = 'tfanimal.txt'
     attach_file = open(attach_file_name, 'rb') # Open the file as binary mode
     payload = MIMEBase('application', 'octate-stream')
     payload.set_payload((attach_file).read())
