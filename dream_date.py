@@ -34,7 +34,7 @@ with open("tfanimal.txt") as dd_txt:
     session = smtplib.SMTP('smtp.gmail.com', 587) #use gmail with port
     session.ehlo()
     session.starttls() #enable security
-    session.login(FROM_EMAIL, password=PASSWORD) #login with mail_id and password
+    session.login(FROM_EMAIL, PASSWORD, initial_response_ok=True) #login with mail_id and password
     text = message.as_string()
     session.sendmail(FROM_EMAIL, TO_EMAIL, text)
     session.quit()
