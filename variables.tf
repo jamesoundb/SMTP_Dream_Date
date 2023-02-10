@@ -1,15 +1,15 @@
 variable "separator" {
-    default = " "
+  default = " "
 }
 
 variable "pet_length" {
-    default = "3"
+  default = "3"
 }
 
 variable "string_length" {
-    default = "16"
+  default = "16"
 }
 
 variable "string_bool" {
-    default = "false"
+  default = "false"
 }
